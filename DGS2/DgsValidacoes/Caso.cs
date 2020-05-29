@@ -335,14 +335,14 @@ namespace Classes
             return false;
         }
 
-        /// <summary>
-        /// Limpa a lista.
-        /// </summary>
-        /// <param name="casos"></param>
-        public static void LimpaCaso(List<Caso> casos)
-        {
-            casos.Clear();
-        }
+        ///// <summary>
+        ///// Limpa a lista.
+        ///// </summary>
+        ///// <param name="casos"></param>
+        //public static void LimpaCaso(List<Caso> casos)
+        //{
+        //    casos.Clear();
+        //}
 
         /// <summary>
         /// Carrega o ficheiro com os dados foram gravados.
@@ -372,7 +372,7 @@ namespace Classes
             }
                return false;
         }
-            #endregion
+           
         
 
         /// <summary>
@@ -387,12 +387,12 @@ namespace Classes
 
             foreach (Caso x in casos)
             {
-                lista += String.Format("Nome: " + x.Nome + " Região: " + x.Regiao + " Idade " + x.Idades + " Genero: " + x.Genero + " Sintomas : " + x.DDoenteRisco + "\n");
+                lista += String.Format("\n" + "Nome: " + x.Nome + " Região: " + x.Regiao + " Idade: " + x.Idades + " Genero: " + x.Genero + " Sintomas : " + x.DDoenteRisco + "\n");
             }
 
             return lista;
         
         }
-
+        #endregion
     }
 }

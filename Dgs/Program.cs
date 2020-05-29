@@ -7,10 +7,9 @@
  * <description>Este programa permite gerir pessoas infecionadas no caso de uma possivel pandemia.Ou seja fazer uma possivel análise estatistica ao numero de infecionados</description>
  * --------------------------------------------------------------------------------
  */
+using Regras;
 using System;
 using System.Collections.Generic;
-using Classes;
-using Regras;
 /// <summary>
 /// Mainspace do programa. Neste espaço, a classe principal(Program), é que irá chamar e executar todos os métodos.
 /// </summary>
@@ -165,13 +164,11 @@ namespace Classes
             #region Ficheiro
             Console.WriteLine("Salva Ficheiro!");
             Caso.SaveCaso(casos, @"C:\Users\diogo\Desktop\DGS\Dgs\bin\caso.bin");
-            
-            Caso.LimpaCaso(casos);
-            Console.WriteLine("Limpa lista!");
 
+            //Caso.LimpaCaso(casos);
+            //Console.WriteLine("Limpa lista!");
 
-            Console.WriteLine("Carrega ficheiro!");
-            Console.WriteLine(Caso.LeFicheiro(casos));
+            Console.WriteLine("Carrega ficheiro de casos!");
             Caso.LoadCasos(casos, @"C:\Users\diogo\Desktop\DGS\Dgs\bin\caso.bin");
             Console.WriteLine(Caso.LeFicheiro(casos));
             #endregion
@@ -191,7 +188,7 @@ namespace Classes
             Validar.InserePessoa(recuperados, new Recuperados("Margarida", "Centro", 80, "Feminino", "Não"));
 
             #region Lista de Recuperados
-            Console.WriteLine("Lista de Recuperados.");
+            Console.WriteLine("\nLista de Recuperados.");
             r.ListaRecuperados(recuperados);
             #endregion
 
@@ -215,12 +212,11 @@ namespace Classes
             Console.WriteLine("Salva Ficheiro!");
             Recuperados.SaveCaso(recuperados, @"C:\Users\diogo\Desktop\DGS\Dgs\bin\recuperado.bin");
 
-            Recuperados.LimpaRecuperados(recuperados);
-            Console.WriteLine("Limpa lista!");
+            ////Recuperados.LimpaRecuperados(recuperados);
+            ////Console.WriteLine("Limpa lista!");
 
 
-            Console.WriteLine("Carrega ficheiro!");
-            Console.WriteLine(Recuperados.LeFicheiro(recuperados));
+            Console.WriteLine("Carrega ficheiro de recuperados!");
             Recuperados.LoadRecuperados(recuperados, @"C:\Users\diogo\Desktop\DGS\Dgs\bin\recuperado.bin");
             Console.WriteLine(Recuperados.LeFicheiro(recuperados));
             #endregion

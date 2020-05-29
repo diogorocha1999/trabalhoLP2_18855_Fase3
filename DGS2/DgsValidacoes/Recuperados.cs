@@ -66,7 +66,7 @@ namespace Classes
         {
             foreach (Recuperados x in casolista)
             {
-                Console.WriteLine("Nome: " + x.Nome + " Região: " + x.Regiao + " Idade: " + x.Idades + " Genero: " + x.Genero + " Recuperado: " + x.Recuperado);
+                Console.WriteLine("\n" + "Nome: " + x.Nome + " Região: " + x.Regiao + " Idade: " + x.Idades + " Genero: " + x.Genero + " Recuperado: " + x.Recuperado);
             }
         }
 
@@ -150,14 +150,14 @@ namespace Classes
             return false;
         }
 
-        /// <summary>
-        /// Limpa a lista.
-        /// </summary>
-        /// <param name="casos"></param>
-        public static void LimpaRecuperados(List<Recuperados> casos)
-        {
-            casos.Clear();
-        }
+        ///// <summary>
+        ///// Limpa a lista.
+        ///// </summary>
+        ///// <param name="casos"></param>
+        //public static void LimpaRecuperados(List<Recuperados> casos)
+        //{
+        //    casos.Clear();
+        //}
 
         /// <summary>
         /// Carrega o ficheiro com os dados foram gravados.
