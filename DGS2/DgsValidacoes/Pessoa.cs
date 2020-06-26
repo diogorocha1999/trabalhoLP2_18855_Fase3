@@ -3,7 +3,7 @@
  * <copyright file = "Person"   Developer: Diogo Rocha @IPCA</copyright>
  * <author>Diogo Miguel Correia Rocha</author>
  * <email>a18855@alunos.ipca.pt</email>
- * <date>22/05/2020</date>
+ * <date>26/06/2020</date>
  * <description>Esta classe define uma pessoa.</description>
  * --------------------------------------------------------------------------------
  */

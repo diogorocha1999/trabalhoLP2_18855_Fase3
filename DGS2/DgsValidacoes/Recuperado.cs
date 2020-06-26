@@ -3,7 +3,7 @@
  * <copyright file = "Person"   Developer: Diogo Rocha @IPCA</copyright>
  * <author>Diogo Miguel Correia Rocha</author>
  * <email>a18855@alunos.ipca.pt</email>
- * <date>22/05/2020</date>
+ * <date>26/06/2020</date>
  * <description>Esta classe define um recuperado.</description>
  * --------------------------------------------------------------------------------
  */
@@ -23,7 +23,6 @@ namespace Classes
     {
         #region Atributos
         protected string recuperado;
-        
         #endregion
 
         #region Construtor
@@ -58,17 +57,17 @@ namespace Classes
 
         #region Métodos
 
-        /// <summary>
-        /// Imprime a lista de recuperados e nao recuperados
-        /// </summary>
-        /// <param name="casolista"></param>
-        public void ListaRecuperados(List<Recuperados> casolista)
-        {
-            foreach (Recuperados x in casolista)
-            {
-                Console.WriteLine("\n" + "Nome: " + x.Nome + " Região: " + x.Regiao + " Idade: " + x.Idades + " Genero: " + x.Genero + " Recuperado: " + x.Recuperado);
-            }
-        }
+        ///// <summary>
+        ///// Imprime a lista de recuperados e nao recuperados
+        ///// </summary>
+        ///// <param name="casolista"></param>
+        //public void ListaRecuperados()
+        //{
+        //    foreach (Recuperados x in doentes)
+        //    {
+        //        Console.WriteLine("\n" + "Nome: " + x.Nome + " Região: " + x.Regiao + " Idade: " + x.Idades + " Genero: " + x.Genero + " Recuperado: " + x.Recuperado);
+        //    }
+        //}
 
             /// <summary>
             /// Conta o numero de pessoas nao recuperadas.

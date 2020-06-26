@@ -45,9 +45,13 @@
     <Compile Include="Validar.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DgsValidacoes\Classes.csproj">
+    <ProjectReference Include="..\Dados\Dados.csproj">
+      <Project>{f999e0c6-74c3-40ff-a547-70d45bbe749f}</Project>
+      <Name>Dados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DgsValidacoes\Bussiness Object.csproj">
       <Project>{e2e69924-cefe-478b-ba42-a90541683bb7}</Project>
-      <Name>Classes</Name>
+      <Name>Bussiness Object</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
